@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+header {
+  display: flex;
+  line-height: 4rem;
+  flex-flow: row nowrap;
+  color: white;
+  padding-left: 1rem;
+  background-color: #01c13b;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  font-weight: bold;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+header.Profile > button,
+header.List > button {
+  color: white;
+}
+
+header.Profile {
+  justify-content: flex-start;
+}
+
+div.Profile {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #262626;
+  color: white;
+  padding: 1rem;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+main.Profile > p {
+  padding: 1rem;
+}
+
+li:hover {
+  background-color: #f2f2f2;
+}
+
+h3 {
+  margin-left: 4rem;
+  align-self: center;
+}
+
+header.List {
+  justify-content: space-between;
+}
+
+.hidden {
+  opacity: 0;
+}
